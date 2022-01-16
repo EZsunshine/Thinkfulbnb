@@ -1,0 +1,227 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form li {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+form li > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
+
+form li > input, select {
+  flex: 2;
+}
+
+form label {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#ideas ul, #ideas ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#ideas ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#ideas ul li {
+  width: 100%;
+}
+
+/* -------  Media Query ------- */
+ @media all and (min-width: 481px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    height: 20px;
+  }
+
+  .logo {
+    font-size: 25px; 
+  }
+
+ form ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+form ul li {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  min-width: 0;
+}
+
+form select,
+form input {
+  margin: 5px 0 5px 0;
+  width: auto;
+}
+
+form button {
+  padding: 10px;
+  width: auto;
+  align-self: flex-end;
+}
+
+#ideas ul {
+  display: flex;
+  justify-content: center;
+}
+
+#ideas ul li {
+  width: 48%;
+  margin: 1px 5px 1px 1px;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  flex: 1;
+  align-self: center;
+}
+
+.double-item {
+  flex: 2;
+  align-self: center;
+}
+}  
